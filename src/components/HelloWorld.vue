@@ -1,39 +1,33 @@
 <template>
-  <div class="hello">
+  <div class="info">
     <h1>{{ msg }}</h1>
     <p>
-      Test Other message
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Software Engineer and DevOps enthusiast. 
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Open Source projects</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a href="https://github.com/LuisFros/image_plane_classifier" target="_blank" rel="noopener">Image Plane Classifier</a></li>
+      <li><a href="https://github.com/LuisFros/rails-dockerizado" target="_blank" rel="noopener">Full Stack Rails + Vue on Docker</a></li>
+      <li><a href="https://github.com/LuisFros/docker-model-evaluator" target="_blank" rel="noopener">Docker ML Model evaluator</a></li>
     </ul>
     <h3>Essential Links</h3>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li><a v-bind:href="pdfPath" target="_blank">Resume/CV</a></li>
     </ul>
   </div>
 </template>
 
 <script>
+
+const pdfPath = "https://es.overleaf.com/download/project/5f89a12f7b67070001d6631e/output/output.pdf?compileGroup=priority"
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data(){
+    return {pdfPath}
   }
 }
 </script>
