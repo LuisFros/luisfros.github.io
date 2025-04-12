@@ -9,6 +9,9 @@
       <li><a href="https://github.com/LuisFros/image_plane_classifier" target="_blank" rel="noopener">Image Plane Classifier</a></li>
       <li><a href="https://github.com/LuisFros/rails-dockerizado" target="_blank" rel="noopener">Full Stack Rails + Vue on Docker</a></li>
       <li><a href="https://github.com/LuisFros/docker-model-evaluator" target="_blank" rel="noopener">Docker ML Model evaluator</a></li>
+        <li class="masthead__menu-item">
+          <a href="/_icon.html">icon</a>
+        </li>
     </ul>
     <h3>Essential Links</h3>
     <ul>
