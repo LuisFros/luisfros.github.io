@@ -19,7 +19,6 @@
             </g>
           </svg>
     </a>
-<ToggleMap />
   </div>
 
   
@@ -27,13 +26,11 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import ToggleMap from './components/ToggleMap.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    ToggleMap
+    HelloWorld
   }
 }
 </script>
